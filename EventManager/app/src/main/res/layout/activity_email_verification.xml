@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".EmailVerificationActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Note :"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Any data entered in a private event CANNOT be accessed by any other users."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+    android:text="Any file uploaded along with a private event CANNOT be accessed by any other users."
+    android:textColor="@android:color/white"
+    android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Any file uploaded or data entered in a shared event can be accessed by ONLY those who have been added to the event."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Please verify your email address to proceed.\nFirebase may take some time to process the verification."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextVerifyEmail"
+            android:text="Example@gmail.com"
+            android:textAlignment="center"
+            android:focusable="false"
+            android:textColor="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/buttonVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Email"
+            android:paddingHorizontal="75dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/buttonCancelRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Register"
+            android:paddingHorizontal="75dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="15"
+            android:background="#00000000"
+            android:src="@drawable/ic_error_outline_black_24dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="It may take some time for the verification mail to be sent.Please try again after 4 hours if the mail has not been recieved."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</LinearLayout>
